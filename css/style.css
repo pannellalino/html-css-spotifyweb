@@ -16,16 +16,17 @@
 header{
   width: calc(100% - 230px);
   height: 90px;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
+  filter: opacity(.5);
 }
 
 main{
-  height: 100vh;
-  padding: 90px 0;
+  height: calc(100vh - 90px);
+  padding-top: 90px;
   margin-left: 230px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .sidebar{
