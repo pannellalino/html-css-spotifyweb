@@ -61,12 +61,12 @@ header a{
   height: calc(100vh - 90px);
   width: 230px;
   padding-top: 20px;
-  padding-left: 30px;
 }
 
 .sidebar .big-logo{
   width: 150px;
   margin-bottom: 30px;
+  margin-left: 30px;
 }
 
 .sidebar .small-logo{
@@ -81,6 +81,11 @@ header a{
 
 .sidebar .menu-sidebar li{
   margin: 10px 0;
+  padding-left: 30px;
+}
+
+.sidebar .menu-sidebar li:hover{
+  border-left: 2px solid lime;
 }
 
 .sidebar .menu-sidebar a{
@@ -147,6 +152,12 @@ footer{
   }
   .big-logo, .menu-sidebar a{
     display: none;
+  }
+  .sidebar .menu-sidebar li{
+    padding: 0;
+  }
+  .sidebar .menu-sidebar li:hover{
+    border-left: none;
   }
 }
   
