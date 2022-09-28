@@ -32,6 +32,11 @@ header{
 
 header button{
   background-color: transparent;
+  margin: auto 0;
+  margin-right: 5px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 1px solid white;
 }
 
 header a{
