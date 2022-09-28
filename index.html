@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
   <title>html-css-spotifyweb</title>
 </head>
@@ -20,8 +21,29 @@
 
   
   <main class="d-flex">
-    <div class="sidebar s-bar-50"></div>
-    <div class="container-main h-m-50"></div>
+    <div class="sidebar s-bar-50">
+      <img class="big-logo" src="img/logo.svg" alt="logo">
+      <img class="small-logo" src="img/logo-small.svg" alt="logo">
+      <nav>
+        <ul class="menu-sidebar">
+          <li><i class="fa-solid fa-house"></i><a href="#">Home</a></li>
+          <li><i class="fa-solid fa-magnifying-glass"></i></i><a href="#">Cerca</a></li>
+          <li><i class="fa-solid fa-lines-leaning"></i><a href="#">La tua libreria</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="struttura-main h-m-50">
+      <nav>
+        <ul class="menu-main d-flex s-center tb-wrap">
+          <li><a href="#">IN EVIDENZA</a></li>
+          <li><a href="#">PODCAST</a></li>
+          <li><a href="#">CLASSIFICHE</a></li>
+          <li><a href="#">GENERI E MOOD</a></li>
+          <li><a href="#">NUOVE USCITE</a></li>
+          <li><a href="#">SCOPRI</a></li>
+        </ul>
+      </nav>
+    </div>
   </main>
 
   <footer></footer>

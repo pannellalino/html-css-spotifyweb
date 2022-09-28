@@ -21,13 +21,21 @@ body{
   justify-content: end;
 }
 
+.s-center{
+  justify-content: center;
+}
+
+.d-wrap{
+  flex-wrap: wrap;
+}
+
 header{
   width: calc(100% - 230px);
   height: 90px;
   position: fixed;
   top: 0;
   right: 0;
-  background-color: rgba(12, 13, 15, .5);
+  background-color: rgba(9, 11, 14, .8);
 }
 
 header button{
@@ -49,12 +57,44 @@ header a{
 }
 
 .sidebar{
-  background-color: #000000;
+  background-color: black;
   height: calc(100vh - 90px);
   width: 230px;
+  padding-top: 20px;
+  padding-left: 30px;
 }
 
-.container-main{
+.sidebar .big-logo{
+  width: 150px;
+  margin-bottom: 30px;
+}
+
+.sidebar .small-logo{
+  display: none;
+}
+
+.sidebar .menu-sidebar{
+  color: #696B71;
+  list-style: none;
+  vertical-align: middle;
+}
+
+.sidebar .menu-sidebar li{
+  margin: 10px 0;
+}
+
+.sidebar .menu-sidebar a{
+  text-decoration: none;
+  color: #696B71;
+  padding-left: 10px;
+  font-size: .9rem;
+}
+
+.sidebar .menu-sidebar i{
+  font-size: 1.5rem;
+}
+
+.struttura-main{
   background-color: #101319;
   width: calc(100% - 230px);
   height: calc(100vh - 90px);
@@ -62,10 +102,33 @@ header a{
   overflow-y: scroll;
 }
 
+.menu-main li{
+  list-style: none;
+  padding: 20px 15px;
+}
+
+.menu-main li a{
+  font-weight: bold;
+  font-size: .8rem;
+  color: #696B71;
+  text-decoration: none;
+}
+
+.menu-main li a:hover{
+  padding-bottom: 5px;
+  border-bottom: 2px solid lime;
+}
+
 footer{
   background-color: #1E1E1E;
   width: 100%;
   height: 90px;
+}
+
+@media (max-width:990px){
+.tb-wrap{
+  flex-wrap: wrap;
+} 
 }
 
 @media (max-width:600px){
@@ -75,4 +138,15 @@ footer{
   .h-m-50{
     width: calc(100% - 50px);
   }
+  .sidebar{
+    padding: 10px 10px;
+    text-align: center;
+  }
+  .sidebar .small-logo{
+    display: inline-block;
+  }
+  .big-logo, .menu-sidebar a{
+    display: none;
+  }
 }
+  
