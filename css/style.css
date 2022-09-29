@@ -184,10 +184,12 @@ footer{
 }
 }
 
-@media (max-width:600px){
+@media (max-width:780px){
   .row-cards .card {
     width: calc(100% / 2);
   }
+
+@media (max-width:600px){
   .s-bar-50{
     width: 50px;
   }
