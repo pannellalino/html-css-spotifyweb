@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/style.css">
   <title>html-css-spotifyweb</title>
@@ -45,17 +45,61 @@
           </ul>
         </nav>
         <h2>Recently played</h2>
-        <div class="recent-played-cards d-flex tb-wrap">
+        <div class="row-cards d-flex tb-wrap">
           <div class="card">
             <img src="img/metal_lifting.jpg" alt="metal">
             <h3>Heavy Metal</h3>
-            <span>Subtitle</span>
+            <span class="subtitle">Subtitle</span>
           </div>
-          <div class="card debug"></div>
-          <div class="card debug"></div>
-          <div class="card debug"></div>
-          <div class="card debug"></div>
-          <div class="card debug"></div>
+          <div class="card">
+            <img src="img/stranger.jpeg" alt="stranger">
+            <h3>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+            <span class="subtitle">Kyle Dixon & Micheal Stein</span>
+          </div>
+          <div class="card">
+            <img src="img/aquietplace.jpeg" alt="quiet">
+            <h3>A quiet place</h3>
+            <span class="subtitle">Subtitle</span>
+          </div>
+          <div class="card">
+            <img src="img/split.jpeg" alt="split">
+            <h3>Split</h3>
+            <span class="subtitle">Subtitle</span>
+          </div>
+          <div class="card">
+            <img src="img/cure.jpeg" alt="cure">
+            <h3>A cure for wellness</h3>
+            <span class="subtitle">Subtitle</span>
+          </div>
+          <div class="card">
+            <img src="img/sinister.jpeg" alt="sinister">
+            <h3>Sinister</h3>
+            <span class="subtitle">Subtitle</span>
+          </div>
+        </div>
+        <h2>Creato per John Doe</h2>
+        <span class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</span>
+        <div class="row-cards d-flex tb-wrap">
+          <div class="card">
+            <img src="img/radar.jpeg" alt="radar">
+            <h3>Release Radar</h3>
+          </div>
+          <div class="card">
+            <img src="img/mixdaily.jpeg" alt="mix">
+            <h3>Daily Mix 1</h3>
+          </div>
+        </div>
+        <h2>Artisti più popolari</h2>
+        <span class="subtitle">Più ascolti, più accurati saranno i suggerimenti.</span>
+        <div class="row-cards d-flex tb-wrap">
+          <div class="card">
+            <img class="radius-img" src="img/youg.jpeg" alt="youg">
+            <h3>Lana del Rey</h3>
+          </div>
+          <div class="card">
+            <img class="radius-img" src="img/einaudi.jpeg" alt="einaudi">
+            <h3>Ludovico Einaudi</h3>
+          </div>
         </div>
       </div>
     </div>

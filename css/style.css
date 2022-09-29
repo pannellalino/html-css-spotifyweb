@@ -118,7 +118,7 @@ header a{
 }
 
 .menu-main li a{
-  font-weight: bold;
+  font-weight: 600;
   font-size: .8rem;
   color: #696B71;
   text-decoration: none;
@@ -132,19 +132,41 @@ header a{
 .container-main h2{
   color: white;
   padding-left: 20px;
-  font-weight: bolder;
+  font-weight: 800;
 }
 
-.recent-played-cards .card{
+.row-cards .card{
   width: calc(100% / 6);
   padding: 20px;
-  height: 200px;
   text-align: center;
   color: white;
+  margin-bottom: 40px;
+  cursor: pointer;
 }
 
-.recent-played-cards .card img{
+.row-cards .card img{
   width: 100%;
+  margin-bottom: 15px;
+}
+
+.row-cards .card img:hover{
+  filter: opacity(.5);
+}
+
+.row-cards .card h3{
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.container-main .subtitle{
+  font-size: 11px;
+  color: #696B71;
+  padding-left: 20px;
+  font-weight: 600;
+}
+
+.row-cards .radius-img{
+  border-radius: 50%;
 }
 
 footer{
@@ -156,10 +178,16 @@ footer{
 @media (max-width:990px){
 .tb-wrap{
   flex-wrap: wrap;
-} 
+}
+.row-cards .card {
+  width: calc(100% / 4);
+}
 }
 
 @media (max-width:600px){
+  .row-cards .card {
+    width: calc(100% / 2);
+  }
   .s-bar-50{
     width: 50px;
   }
