@@ -16,6 +16,7 @@ body{
 .container-main{
   width: 100%;
   margin: auto;
+  padding: 0 10px;
 }
 
 .d-flex{
@@ -53,7 +54,7 @@ header button{
 }
 
 header button:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 header a{
@@ -91,17 +92,53 @@ header a{
 
 .sidebar .menu-sidebar li:hover{
   border-left: 2px solid lime;
+  color: white;
 }
 
 .sidebar .menu-sidebar a{
   text-decoration: none;
   color: #696B71;
-  padding-left: 10px;
   font-size: .9rem;
+  font-weight: 600;
 }
 
-.sidebar .menu-sidebar i{
-  font-size: 1.5rem;
+.menu-sidebar-mb{
+  display: none;
+}
+
+.sb-svg{
+  width: 30px;
+}
+
+.menu-sidebar-playlist{
+  margin-top: 20px;
+  padding-left: 30px;
+  color: white;
+}
+
+.menu-sidebar-playlist i{
+  font-size: 20px;
+  background-color: #696B71; 
+  color: black;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.menu-sidebar-playlist li{
+  list-style: none;
+  margin: 10px 0;
+}
+
+.menu-sidebar-playlist a{
+  text-decoration: none;
+  color: #696B71;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+
+.menu-sidebar-playlist a:hover{
+  color: white;
 }
 
 .struttura-main{
@@ -131,13 +168,13 @@ header a{
 
 .container-main h2{
   color: white;
-  padding-left: 20px;
+  padding-left: 10px;
   font-weight: 800;
 }
 
 .row-cards .card{
   width: calc(100% / 6);
-  padding: 20px;
+  padding: 20px 10px;
   text-align: center;
   color: white;
   margin-bottom: 40px;
@@ -153,7 +190,8 @@ header a{
   filter: opacity(.5);
 }
 
-.row-cards .card h3{
+.row-cards .card h3,
+.menu-sidebar-playlist h3{
   font-size: 14px;
   margin-bottom: 5px;
 }
@@ -161,8 +199,11 @@ header a{
 .container-main .subtitle{
   font-size: 11px;
   color: #696B71;
-  padding-left: 20px;
   font-weight: 600;
+}
+
+.container-main .subtitle.sub-row{
+  padding-left: 10px;
 }
 
 .row-cards .radius-img{
@@ -203,7 +244,7 @@ footer{
   .sidebar .small-logo{
     display: inline-block;
   }
-  .big-logo, .menu-sidebar a{
+  .big-logo, .menu-sidebar{
     display: none;
   }
   .sidebar .menu-sidebar li{
@@ -212,5 +253,13 @@ footer{
   .sidebar .menu-sidebar li:hover{
     border-left: none;
   }
+  .menu-sidebar-mb{
+    display: block;
+  }
+  .menu-sidebar-mb li{
+    margin: 10px 0;
+  }
+  .menu-sidebar-playlist{
+    display: none;
+  }
 }
-  
