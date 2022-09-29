@@ -13,6 +13,11 @@ body{
   border: 1px solid black;
 }
 
+.container-main{
+  width: 100%;
+  margin: auto;
+}
+
 .d-flex{
   display: flex;
 }
@@ -122,6 +127,24 @@ header a{
 .menu-main li a:hover{
   padding-bottom: 5px;
   border-bottom: 2px solid lime;
+}
+
+.container-main h2{
+  color: white;
+  padding-left: 20px;
+  font-weight: bolder;
+}
+
+.recent-played-cards .card{
+  width: calc(100% / 6);
+  padding: 20px;
+  height: 200px;
+  text-align: center;
+  color: white;
+}
+
+.recent-played-cards .card img{
+  width: 100%;
 }
 
 footer{
