@@ -54,7 +54,7 @@
       <div class="container-main">
         <nav>
           <ul class="menu-main d-flex s-center tb-wrap">
-            <li><a href="#">IN EVIDENZA</a></li>
+            <li><a class="plus-active" href="#">IN EVIDENZA</a></li>
             <li><a href="#">PODCAST</a></li>
             <li><a href="#">CLASSIFICHE</a></li>
             <li><a href="#">GENERI E MOOD</a></li>
@@ -123,17 +123,38 @@
     </div>
   </main>
 
-  <footer class="d-flex s-between a-items">
-    <div class="left">
+  <footer class="d-flex a-items s-between">
+    <div class="left d-flex a-items">
       <img src="img/sinister.jpeg" alt="">
-    </div>
-    <div class="center">
-      <div>
-        <i class="fa-regular fa-circle-play"></i>
+      <div class="text">
+        <h4>Sinister</h4>
+        <span>Brano Nome</span>
       </div>
-      <div class="long-bar"></div>
+      <div class="icon d-flex tb-column">
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-regular fa-folder"></i>
+      </div>
     </div>
-    <div class="right">
+    <div class="center d-flex">
+      <div class="top-center d-flex a-items">
+        <i class="fa-solid fa-shuffle"></i>
+        <i class="fa-solid fa-backward-step"></i>
+        <i class="fa-regular fa-circle-play"></i>
+        <i class="fa-solid fa-forward-step"></i>
+        <i class="fa-solid fa-rotate-right"></i>
+      </div>
+      <div class="bottom-center d-flex a-items">
+        <span>0:25</span>
+        <div class="long-bar"></div>
+        <span>4:35</span>
+      </div>
+    </div>
+    <div class="right d-flex a-items s-end">
+      <div class="icon d-flex">
+        <i class="fa-solid fa-list-ul"></i>
+        <i class="fa-solid fa-display"></i>
+        <i class="fa-solid fa-volume-high"></i>
+      </div>
       <div class="bar"></div>
     </div>
   </footer>

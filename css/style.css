@@ -43,6 +43,14 @@ body{
   flex-wrap: wrap;
 }
 
+.v-align{
+  vertical-align: middle;
+}
+
+.f-colum{
+  flex-direction: column;
+}
+
 header{
   width: calc(100% - 230px);
   height: 90px;
@@ -169,9 +177,13 @@ header a{
   text-decoration: none;
 }
 
-.menu-main li a:hover{
+.plus-active{
   padding-bottom: 5px;
   border-bottom: 2px solid lime;
+}
+
+.menu-main li a:hover{
+  color: white;
 }
 
 .container-main h2{
@@ -229,23 +241,74 @@ footer .left img{
   width: 40px;
 }
 
+footer .left .text{
+  line-height: 10px;
+  padding: 10px;
+}
+
+footer .left .icon{
+  color: #696B71;
+  margin: 10px;
+}
+
+footer .left .icon .fa-regular,
+footer .right .icon .fa-solid{
+  margin: 5px;
+}
+
+footer .left .text h4{
+  font-size: .8rem;
+  color: white;
+}
+
+footer .left .text span{
+  font-size: .6rem;
+  color: #696B71;
+  font-weight: 600;
+}
+
 footer .center i{
   color: white;
-  font-size: 30px;
-  margin-bottom: 15px;
+  font-size: 1.4rem;
+  margin: 0 15px;
+}
+
+footer .center i:not(.fa-circle-play){
+  font-size: 1rem;
 }
 
 footer .center .long-bar{
-  width: 430px;
+  width: calc(100% - 40px);
   height: 4px;
   background-color: #474747;
   border-radius: 2px;
+  margin: 20px;
+}
+
+footer .center .bottom-center span{
+  color: white;
+  font-size: .6rem;
 }
 
 footer .center{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 40%;
+}
+
+footer .center .bottom-center{
+  width: 100%;
+}
+
+footer .left,
+footer .right{
+  width: 30%;
+}
+
+footer .right .icon{
+  color: white;
+  font-size: .9rem;
 }
 
 footer .right .bar{
@@ -253,13 +316,14 @@ footer .right .bar{
   height: 4px;
   background-color: #474747;
   border-radius: 2px;
+  margin-left: 5px;
 }
 
 @media (max-width:990px){
-.tb-wrap{
+  .tb-wrap{
   flex-wrap: wrap;
 }
-.row-cards .card {
+  .row-cards .card {
   width: calc(100% / 4);
 }
 }
@@ -268,6 +332,10 @@ footer .right .bar{
   .row-cards .card {
     width: calc(100% / 2);
   }
+  .tb-column{
+  flex-direction: column;
+}
+}
 
 @media (max-width:600px){
   .s-bar-50{
